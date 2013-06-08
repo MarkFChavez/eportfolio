@@ -11,8 +11,8 @@
 						<a target="_blank" class="button bg-color-pink fg-color-white" href="http://www.facebook.com"> Facebook </a> &nbsp;
 						<a target="_blank" class="button bg-color-darken fg-color-white" href="http://www.twitter.com"> Twitter </a> 
 						<br />
-						<a class="button bg-color-yellow" href="http://www.linkedin.com"> Linkedin </a> &nbsp;
-						<a class="button bg-color-greenDark fg-color-white" href="http://www.github.com"> Github </a> 
+						<a target="_blank" class="button bg-color-yellow" href="http://www.linkedin.com"> Linkedin </a> &nbsp;
+						<a target="_blank" class="button bg-color-greenDark fg-color-white" href="http://www.github.com"> Github </a> 
 					</div>
 
 					<div class="top20">
