@@ -15,7 +15,7 @@
 			<div class="page-header-content bg-color-green">
 				<h1 class="fg-color-white"> Your Portfolio <small> <%= current_user.email %> </small> </h1>
 				<div class="padding20 place-right">
-					<%= link_to "<i class='icon-home'></i> Home".html_safe, root_path, class:"button bg-color-red fg-color-white" %>
+					<%= link_to "<i class='icon-home'></i> Home".html_safe, root_path, class:"button bg-color-darken fg-color-white" %>
 					<%= link_to "<i class='icon-cog'></i> Logout".html_safe, destroy_user_session_path, method: :delete, class:"button bg-color-red fg-color-white" %>
 				</div>
 			</div>
@@ -25,7 +25,18 @@
 					<div class="grid">
 						<div class="row">
 							<div class="span10">
-								<p> Start here... </p>
+								<h2> Profile </h2>
+								<hr />
+
+								<h2> Experience </h2>
+								<hr />
+
+								<h2> Skills </h2>
+								<hr />
+							</div>
+
+							<div class="span2">
+								Some content
 							</div>
 						</div>
 					</div>
