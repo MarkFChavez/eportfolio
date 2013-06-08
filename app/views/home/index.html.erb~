@@ -16,6 +16,7 @@
 		<div class="row">
 			<div class="span12">
 				<div class="hero-unit bg-color-green">
+					<%= image_tag "hero-unit-icon.png", class: "place-right" %>
 					<h2 class="fg-color-white"> Be hired. Create your online portfolio! </h2>
 				</div>
 			</div>
@@ -36,7 +37,12 @@
 				<div class="grid">
 					<div class="row">
 						<div class="span5 bg-color-blue padding10">
-							<h2 class="fg-color-white"> <i class="icon-user"></i> What everyone has to say? </h2>
+							<h2 class="fg-color-white"> User1 </h2>
+
+							<blockquote class="fg-color-white">
+								Very awesome application. I was able to get a job because of 
+								this site! More power...
+							</blockquote>
 						</div>
 					</div>
 				</div>
