@@ -8,9 +8,25 @@
 </head>
 <body class="metrouicss">
 
-<div class="page">
-	<%= yield %>
-</div>
+	<div class="page">
+		<div class="page-region">
+			<div class="page-region-content">
+				<% if user_signed_in? %>
+				
+				<% else %>
+					<%= link_to "Register", new_user_registration_path, class:"button place-right bg-color-blue fg-color-white" %>
+					<%= link_to "Login", new_user_session_path, class:"button place-right bg-color-red fg-color-white" %>
+				<% end %>	
+					<%= link_to "Home", root_path, class:"button place-right bg-color-darken fg-color-white" %>
+				
+				<%= link_to "<h1> E-Portfolio </h1>".html_safe, root_path %>
+				<hr />
+			</div>
+			
+			<%= yield %>
+	
+		</div>
+	</div>
 
 </body>
 
