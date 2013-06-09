@@ -10,3 +10,16 @@ jQuery ->
 	$(".cancel-background-form").click ->
 		$("#add-background-form").hide()
 		$(".add-background").show()
+
+	$(".edit-background").click ->
+		$(this).hide();
+		$(".background-content").hide()
+		$("#edit-background-form").show()
+
+	$(".cancel-edit-background-form").click ->
+		$("#edit-background-form").hide()
+		$(".background-content").show()
+		$(".edit-background").show()
+
+
+	

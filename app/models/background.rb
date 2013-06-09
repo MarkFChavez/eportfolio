@@ -4,4 +4,8 @@ class Background < ActiveRecord::Base
 
   validates :summary, presence: true
   validates :summary, length: { maximum: 300 }
+
+  def to_param
+	"#{id}-#{user.email}"
+  end
 end

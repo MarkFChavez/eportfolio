@@ -5,6 +5,16 @@ class BackgroundsController < ApplicationController
 	def create
 		@background = @user.build_background(params[:background])
 		if @background.save
+			redirect_to dashboard_index_path, notice: "Profile saved"
+		else
+			redirect_to dashboard_index_path, alert: @background.errors.full_messages[0]
+		end
+	end
+
+	def update
+		@background = Background.find(params[:id])
+
+		if @background.update_attributes(params[:background])
 			redirect_to dashboard_index_path, notice: "Profile updated"
 		else
 			redirect_to dashboard_index_path, alert: @background.errors.full_messages[0]
