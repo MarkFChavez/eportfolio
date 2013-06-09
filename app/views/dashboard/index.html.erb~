@@ -23,10 +23,22 @@
 										<% if current_user.background %>
 											<p> <%= current_user.background.summary %> </p>
 										<% else %>
-											<p> <i class="icon-plus-2"></i> Add a background </p>
+											<a class="add-background" href="#"> <i class="icon-plus-2"></i> Add a background </a>
 										<% end %>
 
-									
+										<div id="add-background-form" style="margin-top:20px;display:none">
+											<h3> Add a Background </h3>
+											<%= form_for(Background.new) do |f| %>
+												<label>Summary:</label>
+												<div>
+													<%= f.text_area :summary, style:"height:150px;width:250px;padding:5px;resize:none", required:"required" %>
+												</div>	
+
+												<div class="top10">
+													<%= f.submit "Create" %> or <a class="cancel-background-form" href="#">Cancel</a>
+												</div>
+											<% end %>
+										</div>
 									</div>
 								</div>
 							</div>

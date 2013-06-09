@@ -13,7 +13,7 @@
 			<div class="page-region-content">
 				<% if user_signed_in? %>
 					<%= link_to "<i class='icon-cog'></i> Logout".html_safe, destroy_user_session_path, class:"button bg-color-red fg-color-white place-right", method: :delete %>
-					<%= link_to current_user.email, dashboard_index_path, class:"button bg-color-pink fg-color-white place-right" %>
+					<%= link_to "<i class='icon-user'></i> ".html_safe + current_user.email, dashboard_index_path, class:"button bg-color-pink fg-color-white place-right" %>
 				<% else %>
 					<%= link_to "Register", new_user_registration_path, class:"button place-right bg-color-blue fg-color-white" %>
 					<%= link_to "Login", new_user_session_path, class:"button place-right bg-color-red fg-color-white" %>
@@ -30,13 +30,13 @@
 						<div class="span12">
 							<div class="notices">
 								<div class="bg-color-green">
-							<a href="#" class="close"></a>
-							<div class="notice-header fg-color-white"> <%= notice %> </div>
+									<a href="#" class="close"></a>
+									<div class="notice-header fg-color-white"> <%= notice %> </div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-		</div>
-	</div>
 			<% end %>
 
 			<% if alert %>

@@ -30,13 +30,13 @@
 						<div class="span12">
 							<div class="notices">
 								<div class="bg-color-green">
-							<a href="#" class="close"></a>
-							<div class="notice-header fg-color-white"> <%= notice %> </div>
+									<a href="#" class="close"></a>
+									<div class="notice-header fg-color-white"> <%= notice %> </div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-		</div>
-	</div>
 			<% end %>
 
 			<% if alert %>

@@ -8,5 +8,5 @@ jQuery ->
 		$("#add-background-form").show()
 
 	$(".cancel-background-form").click ->
-		$("#add-background-form").hide()
+		$"#add-background-form").hide()
 		$(".add-background").show()
