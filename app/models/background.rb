@@ -3,5 +3,5 @@ class Background < ActiveRecord::Base
   belongs_to :user
 
   validates :summary, presence: true
-  validates :summary, length: { maximum: 140 }
+  validates :summary, length: { maximum: 300 }
 end
