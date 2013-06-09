@@ -51,7 +51,7 @@
 											</div>
 
 											<div style="margin-top:10px">
-												<%= f.submit "Update" %> or <a href="#">Cancel</a>
+												<%= f.submit "Update" %> or <a class="cancel-edit-background-form" href="#">Cancel</a>
 											</div>
 										<% end %>
 									</div>

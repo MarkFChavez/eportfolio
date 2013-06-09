@@ -40,50 +40,52 @@
 											<% end %>
 										</div>
 									</div>
+									
+										<% if current_user.background %>
+											<div id="edit-background-form" style="display:none;margin-top:10px">
+												<h3> Edit Background </h3>
+										
+												<%= form_for(@background) do |f| %>
+													<label>Summary:</label>
+													<div>
+														<%= f.text_area :summary, style:"height:150px;width:350px;padding:5px;resize:none", required:"required" %>
+													</div>
 
-									<div id="edit-background-form" style="display:none;margin-top:10px">
-										<h3> Edit Background </h3>
-
-										<%= form_for(@background) do |f| %>
-											<label>Summary:</label>
-											<div>
-												<%= f.text_area :summary, style:"height:150px;width:350px;padding:5px;resize:none", required:"required" %>
-											</div>
-
-											<div style="margin-top:10px">
-												<%= f.submit "Update" %> or <a class="cancel-edit-background-form" href="#">Cancel</a>
+													<div style="margin-top:10px">
+														<%= f.submit "Update" %> or <a class="cancel-edit-background-form" href="#">Cancel</a>
+													</div>
+												<% end %>
 											</div>
 										<% end %>
+										</div>
+									</div>
+								</div>
+
+								<div class="grid" style="margin-top:15px">
+									<div class="row">
+										<div class="span9">
+											<h2> <i class="icon-dashboard"></i> Experiences </h2>
+											<hr />
+										</div>
+									</div>
+								</div>
+
+								<div class="grid" style="margin-top:15px">
+									<div class="row">
+										<div class="span9">
+											<h2> <i class="icon-glasses"></i> Skills </h2>
+											<hr />
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="grid" style="margin-top:15px">
-							<div class="row">
-								<div class="span9">
-									<h2> <i class="icon-dashboard"></i> Experiences </h2>
-									<hr />
-								</div>
+							<div class="span3">
+								<label class="label success"> Get to know them! </label>
+								<hr />
 							</div>
 						</div>
-
-						<div class="grid" style="margin-top:15px">
-							<div class="row">
-								<div class="span9">
-									<h2> <i class="icon-glasses"></i> Skills </h2>
-									<hr />
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="span3">
-						<label class="label success"> Get to know them! </label>
-						<hr />
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
