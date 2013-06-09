@@ -13,13 +13,15 @@
 	<div class="page secondary">
 		<div class="page-header">
 			<div class="page-header-content bg-color-green">
-				<h1 class="fg-color-white"> Your Portfolio <small> <%= current_user.email %> </small> </h1>
+				<h1 class="fg-color-white"> Your Portfolio <small> <%= current_user.email %> &nbsp; <%= link_to "<span class='label important'>Edit</span>".html_safe, edit_user_registration_path %> </small> </h1>
 				<div class="padding20 place-right">
 					<%= link_to "<i class='icon-home'></i> Home".html_safe, root_path, class:"button bg-color-darken fg-color-white" %>
 					<%= link_to "<i class='icon-cog'></i> Logout".html_safe, destroy_user_session_path, method: :delete, class:"button bg-color-red fg-color-white" %>
 				</div>
 			</div>
+		</div>
 
+		<div class="page">
 			<div class="page-region top20">
 				<div class="page-region-content">
 					<div class="grid">
@@ -43,7 +45,6 @@
 				</div>
 			</div>
 		</div>
-
-	</body>
+</body>
 
 

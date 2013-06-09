@@ -8,11 +8,11 @@
 </head>
 <body class="metrouicss">
 
-	<div class="page">
+	<div class="page application">
 		<div class="page-region">
 			<div class="page-region-content">
 				<% if user_signed_in? %>
-					<%= link_to "Logout", destroy_user_session_path, class:"button place-right", method: :delete %>
+					<%= link_to "<i class='icon-cog'></i> Logout".html_safe, destroy_user_session_path, class:"button bg-color-red fg-color-white place-right", method: :delete %>
 					<%= link_to current_user.email, dashboard_index_path, class:"button bg-color-pink fg-color-white place-right" %>
 				<% else %>
 					<%= link_to "Register", new_user_registration_path, class:"button place-right bg-color-blue fg-color-white" %>

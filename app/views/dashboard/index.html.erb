@@ -1,4 +1,64 @@
 
 <%= title("Dashboard") %>
 
+<div class="page">
+	<div class="page-region top20">
+		<div class="page-region-content">
+			<div class="grid">
+				<div class="row">
+					<div class="span9">
+						<div class="grid">
+							<div class="row">
+								<div class="span9">
+									<h2> 
+										<i class="icon-briefcase"></i> Background 
+										<% if current_user.background %>
+											<small style="font-size:12px"><i class="icon-pencil"></i> Edit </small>
+										<% end %>
+									</h2>
 
+									<hr />
+
+									<div style="margin-top:20px">
+										<% if current_user.background %>
+											<p> <%= current_user.background.summary %> </p>
+										<% else %>
+											<p> <i class="icon-plus-2"></i> Add a background </p>
+										<% end %>
+
+										<div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid" style="margin-top:15px">
+							<div class="row">
+								<div class="span9">
+									<h2> <i class="icon-dashboard"></i> Experiences </h2>
+									<hr />
+								</div>
+							</div>
+						</div>
+
+						<div class="grid" style="margin-top:15px">
+							<div class="row">
+								<div class="span9">
+									<h2> <i class="icon-glasses"></i> Skills </h2>
+									<hr />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="span3">
+						<label class="label success"> Get to know them! </label>
+						<hr />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
